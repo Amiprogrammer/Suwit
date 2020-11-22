@@ -9,4 +9,22 @@ ligth_red = "color c"
 
 program_running = True
 while program_running:
-    pass
+    try:
+        print("""
+x====xxxx===x
+=x= SUWIT =x=
+==x==xxx==x==
+
+pili sala satuh:
+* guntin
+* batu
+* kertas
+*
+* keluar (q)
+""") 
+
+        computer = random.choice(["batu","guntin","kertas"])
+        player = str(input("ketik disini: "))
+        break
+    except Exception as error:
+        print(error)
